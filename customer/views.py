@@ -16,3 +16,7 @@ class Confirmation(View):
 class Sides(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/sides.html')
+
+class Drinks(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/drinks.html')
