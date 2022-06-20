@@ -20,3 +20,7 @@ class Sides(View):
 class Drinks(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/drinks.html')
+
+class Buns(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/buns.html')
