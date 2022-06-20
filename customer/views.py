@@ -36,3 +36,7 @@ class Salad(View):
 class Dressing(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/dressing.html')
+
+class Extras(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/extras.html')
