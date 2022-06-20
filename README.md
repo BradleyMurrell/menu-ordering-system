@@ -30,6 +30,7 @@ When the order is complete, the restaurant can mark the order as complete.
 ------
 ## Wireframe
 
+<img src="images/Wireframe.png">
 
 ------
 ## Features
