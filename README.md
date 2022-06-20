@@ -1,108 +1,59 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Menu Ordering System
 
-Welcome USER_NAME,
+## Despription
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+For my project, I have created an ordering system for a burger restaurant called 'Brad's Burgers'.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The idea of the ordering system is that when the customer arrives to the restaurant, they will make their order on a terminal.
 
-## Gitpod Reminders
+The customer will first see the home screen which will prompt them to 'Place Order'.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+After 'Place Order' has been selected, the screen will show a list of categories to choose from, 'Burger', 'Meal', 'Sides' and 'Drinks'.
 
-`python3 -m http.server`
+After selecting a category, the customer will have a choice of selecting from a list of the chosen category.
 
-A blue button should appear to click: _Make Public_,
+If 'Meal' was chosen, the customer will get to choose from the three 'Burger', 'Sides' and 'Drinks' categories.
 
-Another blue button should appear to click: _Open Browser_.
+In the 'Burger' category, the customer will get to make their own burger by selecting from a number of sub-categories, 'Bun', 'Meat', 'Salad', 'Dressing' and 'Extra'.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The customer may choose one option from the 'Bun' and 'Meat' category, but may choose more than one from 'Salad', 'Dressing' and 'Extra' categories at an extra price for each additional extra.
 
-A blue button should appear to click: _Make Public_,
+When the customer has finished with their order, they will see a table on the order page what they have ordered and the total cost.
 
-Another blue button should appear to click: _Open Browser_.
+When they are happy with the order, the customer can select the 'Finish Order' button which will dirict them to a final page displaying their order number.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The restaurant will then be able to see the orders that have been made along side the order number.
 
-To log into the Heroku toolbelt CLI:
+When the order is complete, the restaurant can mark the order as complete.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ------
+## Wireframe
 
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
 ------
+## Features
+### Existing Features
+* Customer can customize their burger by selecting what they want on it
 
-## FAQ about the uptime script
+### Future Features
+* Make a payment after completing order
+* Register customer details and order online
+* Option for home delivery
 
-**Why have you added this script?**
+------
+## Testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+### Bugs
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+------
+## Deployment
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+------
+## Credits
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+------
