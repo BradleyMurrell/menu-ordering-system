@@ -28,3 +28,7 @@ class Buns(View):
 class Meat(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/meat.html')
+
+class Salad(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/salad.html')
