@@ -9,15 +9,16 @@
     </div>
     <div class="row justify-content-center mt-1">
         <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
-            <button class="btn btn-danger">Burger</button>
-            <button class="btn btn-danger">Meal</button>
-            <a href="{% url 'sides' %}" class="btn btn-danger">Sides</a>
-            <button class="btn btn-danger">Drinks</button>
+            <button class="btn btn-warning">Side 1</button>
+            <button class="btn btn-warning">Side 2</button>
+            <button class="btn btn-warning">Side 3</button>
+            <button class="btn btn-warning">Side 4</button>
         </div>
     </div>
     <div class="row justify-content-center mt-1">
         <div class="col-md-5 col-sm-12 offset-md-1 p-4 text-center">
-            <a href="{% url 'confirmation' %}" class="btn btn-primary">Finish Order</a>
+            <a href="{% url 'order' %}" class="btn btn-primary">Back</a>
+            <a href="{% url 'order' %}" class="btn btn-primary">Next</a>
         </div>
     </div>
 </div>

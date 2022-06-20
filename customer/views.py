@@ -12,3 +12,7 @@ class Order(View):
 class Confirmation(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/confirmation.html')
+
+class Sides(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/sides.html')
