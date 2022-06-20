@@ -8,3 +8,7 @@ class Index(View):
 class Order(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/order.html')
+
+class Confirmation(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'customer/confirmation.html')
