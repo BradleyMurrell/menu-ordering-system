@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views import View
+from .models import Drink
 
 class Index(View):
     def get(self, request, *args, **kwargs):
@@ -20,6 +21,11 @@ class Sides(View):
 class Drinks(View):
     def get(self, request, *args, **kwargs):
         return render(request, 'customer/drinks.html')
+
+    def drink(request):
+        drinks = Drink.objects.all()
+        ctx = {'drinks': drinks}
+        return render(request, 'customer/drinks.html', ctx)
 
 class Buns(View):
     def get(self, request, *args, **kwargs):

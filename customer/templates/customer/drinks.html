@@ -2,18 +2,14 @@
 
 {% block content %}
 <div class="container mb-5">
-    <div class="row justify-content-center mt-5">
-        <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
-            <h1>Brad's Burgers</h1>
-        </div>
-    </div>
     <div class="row justify-content-center mt-1">
         <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
-            <h2>Select Side</h2>
-            <button class="btn btn-warning">Drink 1</button>
-            <button class="btn btn-warning">Drink 2</button>
-            <button class="btn btn-warning">Drink 3</button>
-            <button class="btn btn-warning">Drink 4</button>
+            {% for drink in drinks %}
+            <div>
+                <img src="{{ drink.Image }}">
+                <h4>{{ drink.name }}</h4>
+            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="row justify-content-center mt-1">
